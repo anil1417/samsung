@@ -18,6 +18,18 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  <distributionManagement>
+	<repositores>
+		<repository>
+			<id>nexus</id>
+			<url>http://localhost:8083/repository/ReleaseDemo/</url>
+		</repository>
+		<repository>
+			<id>nexus</id>
+			<url>http://localhost:8083/repository/SnapshotDemo/</url>
+		</repository>
+	</repositores>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
@@ -63,17 +75,5 @@
         </plugin>
       </plugins>
     </pluginManagement>
-		<distributionManagement>
-			<repositores>
-				<repository>
-					<id>nexus</id>
-					<url>http://localhost:8083/repository/ReleaseDemo/</url>
-				</repository>
-				<repository>
-					<id>nexus</id>
-					<url>http://localhost:8083/repository/SnapshotDemo/</url>
-				</repository>
-			</repositores>
-		</distributionManagement>
   </build>
 </project>
