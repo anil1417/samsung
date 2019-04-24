@@ -7,6 +7,7 @@
 		%>
 	</head>
 	<body>
+		<body style="background-color:powderblue;">
 		<h2><%= title %></h2>
 		<p>
 			If you see this, the example war-file was correctly deployed! Congrats!
